@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(220, 230, 236);
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 120px;
+  left: 350px;
+  background-color: #fff;
+  width: 300px;
+  height: 370px;
+  border: 1px solid rgb(240, 240, 240);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.profile-card .image {
+  background-color: rgb(0, 88, 219);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 120px;
+  z-index: 1;
+}
+
+.profile-card .image img {
+  width: 85px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  border: 3px solid #000;
+  bottom: -23px;
+}
+
+.profile-card .image .layer {
+  background-color: rgb(0, 88, 219);
+  width: 95px;
+  height: 90px;
+  z-index: 1;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -25px;
+}
+
+.profile-card .profile-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-card .profile-info header .head {
+  margin-top: 120px;
+  margin-left: 50px;
+}
+
+.profile-card .profile-info header p {
+  font-size: 13px;
+}
+
+.profile-card .profile-info .sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.profile-card .profile-info .sosmed div {
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-card .profile-info .sosmed div i {
+  color: white;
+}
+
+.profile-card .profile-info .sosmed .icon-container1 {
+  background-color: rgb(0, 81, 173);
+}
+
+.profile-card .profile-info .sosmed .icon-container2 {
+  background-color: rgb(0, 119, 255);
+}
+
+.profile-card .profile-info .sosmed .icon-container3 {
+  background-color: rgb(190, 0, 73);
+}
+
+.profile-card .profile-info .sosmed .icon-container4 {
+  background-color: rgb(179, 1, 1);
+}
+
+.profile-card .profile-info .btn {
+  margin-bottom: 20px;
+}
+
+.profile-card .profile-info .btn button {
+  background-color: rgb(0, 88, 219);
+  border: none;
+  color: white;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.profile-card .profile-info .btn button:hover {
+  background-color: rgb(0, 70, 175);
+}
+
+.profile-card .profile-info .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5px;
+}
+
+.profile-card .profile-info .icon div {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.profile-card .profile-info .icon div i {
+  margin-right: 5px;
+}
+
+.profile-card .profile-info .icon div div::after {
+  content: '';
+  width: 2px;
+  height: 15px;
+  background-color: rgb(196, 196, 196);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.profile-card .profile-info div .share::after {
+  display: none;
+}
+
